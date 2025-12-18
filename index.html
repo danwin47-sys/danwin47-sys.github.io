@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="個人作品集網站 - 展示我的專案與技能">
+    <title>我的作品集 | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">首頁</a></li>
+                    <li><a href="#about" class="nav-link">關於我</a></li>
+                    <li><a href="#skills" class="nav-link">技能</a></li>
+                    <li><a href="#projects" class="nav-link">作品</a></li>
+                    <li><a href="#contact" class="nav-link">聯絡</a></li>
+                </ul>
+
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="切換主題">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="開啟選單">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">👋 你好，我是</p>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Derek Shih</span>
+                    </h1>
+                    <p class="hero-subtitle">Vibe Coding 實踐者 | Python 開發者 | AI 工具愛好者</p>
+                    <p class="hero-description">
+                        相信最好的程式碼來自於靈感與直覺的結合。透過 vibe coding 的方式，
+                        我將創意想法快速轉化為實用的應用程式，享受編程的樂趣與成就感。
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>查看作品</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>聯絡我</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/danwin47-sys" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/derek-shih" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/derekshih" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:derek.shih@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>向下滾動</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">關於我</span>
+                <h2 class="section-title">我的故事</h2>
+                <p class="section-description">了解更多關於我的背景與經歷</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>嗨！很高興認識你 👋</h3>
+                    <p>
+                        我是 Derek，一位熱愛 <strong>vibe coding</strong> 的 Python 開發者。
+                        我相信編程不只是邏輯的堆砌，更是創意與靈感的展現。
+                        透過跟隨直覺和靈感，我能快速將想法轉化為實用的應用程式。
+                    </p>
+                    <p>
+                        我的專案都是在「感覺對了」的時刻誕生的 —— 從桌遊管理系統到 OCR 工具，
+                        再到語音轉錄應用，每一個都是 vibe coding 的成果。
+                        我享受這種自由創作的過程，並持續探索 AI 工具如何讓開發更有趣、更高效。
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">X+</div>
+                            <div class="stat-label">完成專案</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">X+</div>
+                            <div class="stat-label">技術掌握</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">X+</div>
+                            <div class="stat-label">工作經驗</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>乾淨的程式碼</h4>
+                        <p>撰寫可維護、可擴展且符合最佳實踐的程式碼</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>響應式設計</h4>
+                        <p>確保在所有裝置上都能提供完美的使用體驗</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>效能優化</h4>
+                        <p>專注於速度與效能，打造快速載入的應用</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>創新思維</h4>
+                        <p>持續探索新技術，尋找更好的解決方案</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">技能</span>
+                <h2 class="section-title">我的技術棧</h2>
+                <p class="section-description">我熟悉的技術與工具</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        前端開發
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <span>Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        後端開發
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        工具與其他
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <span>Terminal</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">作品集</span>
+                <h2 class="section-title">精選專案</h2>
+                <p class="section-description">我最引以為傲的作品</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project Card 1: Boardgame-Web -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-dice"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://boardgame-web.onrender.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>查看專案</span>
+                                </a>
+                                <a href="https://github.com/danwin47-sys/boardgame-web" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>原始碼</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Flask</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Google Sheets API</span>
+                            <span class="tag">BGG API</span>
+                        </div>
+                        <h3 class="project-title">Boardgame-Web 桌遊管理系統</h3>
+                        <p class="project-description">
+                            一個完整的桌遊借還管理系統，整合 BoardGameGeek 資料庫，提供圖庫牆展示、
+                            成就系統、自動化更新等功能。使用 Google Sheets 作為後端，部署在 Render.com。
+                            270+ 測試，80% 覆蓋率，完全由 vibe coding 打造！
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: PaddleOCR Toolkit -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/danwin47-sys/paddleocr-toolkit" class="project-link"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>查看專案</span>
+                                </a>
+                                <a href="https://github.com/danwin47-sys/paddleocr-toolkit" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>原始碼</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PaddleOCR</span>
+                            <span class="tag">PDF</span>
+                            <span class="tag">Ollama</span>
+                        </div>
+                        <h3 class="project-title">PaddleOCR Toolkit</h3>
+                        <p class="project-description">
+                            專業級 OCR 文件辨識工具，支援可搜尋 PDF 生成、PDF 翻譯、多種輸出格式。
+                            經過完整重構，391 個測試，84% 覆蓋率，記憶體使用優化 90%。
+                            從靈感到實作，完全 vibe coding 的產物！
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Whisper Desktop -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/danwin47-sys/whisper-desktop" class="project-link"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>查看專案</span>
+                                </a>
+                                <a href="https://github.com/danwin47-sys/whisper-desktop" class="project-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    <span>原始碼</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyQt5</span>
+                            <span class="tag">Faster-Whisper</span>
+                            <span class="tag">VAD</span>
+                        </div>
+                        <h3 class="project-title">Whisper Desktop 語音轉錄工具</h3>
+                        <p class="project-description">
+                            桌面語音轉錄應用，支援即時轉錄與批次檔案處理，浮動字幕視窗，
+                            VAD 語音活動檢測。現代化 UI 設計，深色模式支援。
+                            又一個 vibe coding 的成功案例！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">聯絡我</span>
+                <h2 class="section-title">讓我們一起合作</h2>
+                <p class="section-description">有任何想法或專案？歡迎與我聯繫！</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>取得聯繫</h3>
+                    <p>我隨時歡迎新的機會和挑戰。無論是專案合作、工作機會，或只是想打個招呼，都歡迎與我聯繫！</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <a href="mailto:derek.shih@example.com">derek.shih@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/danwin47-sys" target="_blank">@danwin47-sys</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/derek-shih" target="_blank">Derek Shih</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required placeholder="請輸入您的姓名">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">主旨</label>
+                        <input type="text" id="subject" name="subject" required placeholder="專案合作、工作機會等">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">訊息</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="請告訴我您的想法..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span>發送訊息</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Derek Shih. All rights reserved.</p>
+                    <p>使用 ❤️ 和 ☕ 打造 | Powered by Vibe Coding</p>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/danwin47-sys" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/derek-shih" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/derekshih" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:derek.shih@example.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
